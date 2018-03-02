@@ -1,7 +1,7 @@
 # Servo motor
 
 ## Servo Library
-
+![servo](https://user-images.githubusercontent.com/32713072/36920537-6d9efd78-1e7a-11e8-8f66-139f57e09ddb.PNG) <br/>
 This library allows an Arduino board to control RC (hobby) servo motors. Servos have integrated gears and a shaft that can be precisely controlled. Standard servos allow the shaft to be positioned at various angles, usually between 0 and 180 degrees. Continuous rotation servos allow the rotation of the shaft to be set to various speeds.
 
 ## Pinout 
