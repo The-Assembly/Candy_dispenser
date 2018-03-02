@@ -1,7 +1,7 @@
 # LCD (Liquid Crystal Display)
 
 ## LiquidCrystal Library
-
+![lcd](https://user-images.githubusercontent.com/32713072/36920539-6e17ed28-1e7a-11e8-8add-a9eda4d0c6ce.PNG) <br/>
 This library allows an Arduino board to control LiquidCrystal displays (LCDs) based on the Hitachi HD44780 (or a compatible) chipset, which is found on most text-based LCDs. The library works with in either 4- or 8-bit mode (i.e. using 4 or 8 data lines in addition to the rs, enable, and, optionally, the rw control lines).
 
 ## Pinout
