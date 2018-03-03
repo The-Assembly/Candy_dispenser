@@ -41,13 +41,13 @@ boolean wait = false;
 
 char player_num[4]; //Stores the number of the player
 
-String numOfPlayer = String(); //Almacena las 4 cifras del jugador
+String numOfPlayer = String(); 
 String snumOfPlayer;
 
 
 int counter=0;
 int i,j,x;
-//int puntos,famas=0;
+
 int attempts=0;
 int max_attempt=5;
 
@@ -99,21 +99,27 @@ void generate_random()
     {
       case '1':
   
-       firstNum=random(1,11);  //Generates a number between un número aleatorio entre 1 and 10
-       secondNum=random(1,11);  //Generates a number between un número aleatorio entre 1 and 10     
+       firstNum=random(1,11);  //Generates a number between 1 and 10
+       secondNum=random(1,11);  //Generates a number between 1 and 10     
        break;
 
       case '2':
       
-       firstNum=random(50,100);  //Generates a number between un número aleatorio entre 50 and 99
-       secondNum=random(1,11);  //Generates a number between un número aleatorio entre 1 and 10
+       firstNum=random(50,100);  //Generates a number between 50 and 99
+       secondNum=random(1,11);  //Generates a number between 1 and 10
        break;
 
         
       case '3':
         
-       firstNum=random(50,100);  //Generates a number between un número aleatorio entre 1 y 99
-       secondNum=random(50,100);  //Generates a number between un número aleatorio entre 1 y 10     
+       firstNum=random(50,100);  //Generates a number between 1 and 99
+       secondNum=random(50,100);  //Generates a number between 1 and 10     
+       break;
+
+      case '4':
+
+       firstNum=random(1,100);  //Generates a number between 1 and 100
+       secondNum=random(1,100);  //Generates a number between 1 and 100     
        break;
 
       
@@ -275,7 +281,7 @@ void choose()
   lcd.setCursor(2,0);
   lcd.print("Select level");
   lcd.setCursor(0,1);
-  lcd.print("1-E   2-M    3-H");
+  lcd.print("1-E 2-M 3-H 4-R");
 
 }
 
@@ -329,7 +335,7 @@ void loop()
   timer();
   
   // put your main code here, to run repeatedly:
-
+  
   
   char key = keypad.getKey();
   
@@ -341,7 +347,7 @@ void loop()
     //If is the select level display
     if(modePlay==false)    
       {
-        if(key=='1' || key=='2' || key=='3')
+        if(key=='1' || key=='2' || key=='3' || key=='4')
       {
           level=key;
           
@@ -359,6 +365,9 @@ void loop()
               break;
             case '3':
               sLevel="Hard Level";
+              break;
+            case '4':
+              sLevel = "Random Level";
               break;
             
           } //end switch
