@@ -1,5 +1,4 @@
-/* Speed Game made by José Luis Bejarano Vásquez
-31/08/2016 */
+
 #include <Keypad.h>
 #include <LiquidCrystal.h>
 LiquidCrystal lcd(0,1, 10, 11 , 12,13);
