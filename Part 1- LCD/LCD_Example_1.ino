@@ -37,7 +37,7 @@ void setup() {
   lcd.begin(16, 2);
   // Print a message to the LCD.
   led.setCursor(0,0);
-  lcd.print("Welcome to the Candy Dispenser workshop!");
+  lcd.print("Candy Dispenser workshop!");
   
 }
 
