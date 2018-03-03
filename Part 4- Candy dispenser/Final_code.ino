@@ -273,8 +273,8 @@ void check()
 }
 
 void choose()
-{ myservo.write(90);                  // sets the servo position according to the scaled value
-  delay(1000);
+{ myservo.write(10);                  // sets the servo position according to the scaled value
+  delay(10000);
   modePlay=false;
   attempt=0;
   lcd.clear();
